@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>sid2varun:Number_of_Unapproved_posts_and_topics_in_header</id>
+	<name>Unapproved Attachments, Posts and Topics in Mod</name>
+	<version>1.0</version>
+	<type>modification</type>
+	<install for="2.1 - 2.1.99, 2.1 RC4">
+		<!-- Mod Readme -->
+		<readme lang="english" parsebbc="true" type="file">readme.txt</readme>
+		<!-- License -->
+		<license type="inline" parsebbc="false">
+			This Source Code Form is subject to the terms of the Mozilla Public
+			License, v. 2.0. If a copy of the MPL was not distributed with this
+			file, You can obtain one at https://www.mozilla.org/en-US/MPL/2.0/.
+		</license>
+		<!-- Source File -->
+		<require-dir name="Sources" destination="$boarddir">Source file</require-dir>
+		<!-- Hooks -->
+		<hook hook="integrate_current_action" function="UnapprovedATP::current_action#" file="$sourcedir/Unapproved-ATP.php" />
+	</install>
+
+	<uninstall for="2.1 - 2.1.99, 2.1 RC4">
+		<!-- Hooks Remove -->
+		<hook hook="integrate_current_action" function="UnapprovedATP::current_action#" file="$sourcedir/Unapproved-ATP.php" reverse="true" />
+		<!-- Source File -->
+		<remove-file name="$sourcedir/Unapproved-ATP.php">Source file</remove-file>
+	</uninstall>
+</package-info>
