@@ -8,6 +8,7 @@
 
 ## Introduction
 Unapproved Attachments, Posts and Topics in Mod will display the number of unapproved attachments, posts and topics in the mod menu counter.
+
 ---
 ### [Changelog](https://github.com/SMFTricks/Unapproved-Attachments-Posts-and-Topics-in-Mod/blob/main/CHANGELOG.md)
 ### [GitHub](https://github.com/SMFTricks/Unapproved-Attachments-Posts-and-Topics-in-Mod)
