@@ -3,11 +3,11 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>sid2varun:Number_of_Unapproved_posts_and_topics_in_header</id>
 	<name>Unapproved Attachments, Posts and Topics in Mod</name>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<type>modification</type>
-	<install for="2.1 - 2.1.99, 2.1 RC4">
+	<install for="2.1 - 2.1.99">
 		<!-- Mod Readme -->
-		<readme lang="english" parsebbc="true" type="file">readme.txt</readme>
+		<readme lang="english" parsebbc="true" type="file">readme/readme.english.txt</readme>
 		<!-- License -->
 		<license type="inline" parsebbc="false">
 			This Source Code Form is subject to the terms of the Mozilla Public
@@ -20,7 +20,7 @@
 		<hook hook="integrate_current_action" function="UnapprovedAPT::current_action#" file="$sourcedir/Unapproved-APT.php" />
 	</install>
 
-	<uninstall for="2.1 - 2.1.99, 2.1 RC4">
+	<uninstall for="2.1 - 2.1.99">
 		<!-- Hooks Remove -->
 		<hook hook="integrate_current_action" function="UnapprovedAPT::current_action#" file="$sourcedir/Unapproved-APT.php" reverse="true" />
 		<!-- Source File -->
