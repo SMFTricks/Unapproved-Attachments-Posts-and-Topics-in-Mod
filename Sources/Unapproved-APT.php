@@ -2,9 +2,9 @@
 
 /**
  * @package Unapproved Attachments, Posts and Topics in Mod
- * @version 1.0
+ * @version 1.0.1
  * @author Diego Andrés <diegoandres_cortes@outlook.com>
- * @copyright Copyright (c) 2021, Diego Andrés
+ * @copyright Copyright (c) 2022, SMF Tricks
  * @license https://www.mozilla.org/en-US/MPL/2.0/
  */
 
